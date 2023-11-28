@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto+Condensed:wght@300&display=swap');
+
+body{
+    background: url(./background.png);
+}
+
+header{
+    background: rgba(98, 200, 186, 1);
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 5px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Paytone One";
+    font-size: 30px;
+    padding: 35px;
+}
+
+header ul li a:hover{
+    background: rgba(33, 96, 147, 1);
+}
+
+.logo{
+    position: absolute;
+    position: sticky;
+    top: 35px;
+}
+
+.logo img{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    top: -80px;
+    left: 28.5%;
+}
+
+.contenedor{
+    display: flex;
+    opacity: 0.9;
+    border-radius: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos{
+    background: white;
+    opacity: 0.8;
+    width: 250px;
+    height: 325px;
+    margin: 15px;
+    border-radius: 20px;
+    font-family: "Paytone One";
+    text-align: center;
+    line-height: 5px;
+}
+
+.productos:hover{
+    opacity: 1;
+}
+
+.productos img{
+    margin-top: 10px;
+}
+
+.cart{
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(98, 200, 186, 1);
+    text-decoration: none;
+    color: white;
+}
+
+#Historia{
+    font-family: "Paytone One";
+    font-size: 30px;
+    text-align: center;
+}
+
+#Contacto{
+    font-family: "Paytone One";
+    font-size: 30px;
+    text-align: center;
+}
+
+#Contacto a{
+    color: white;
+}
+
+h2{
+    font-size: 70px;
+}
+
+footer ul li a{
+    display: inline-block;
+    padding: 7px;
+}
+
+footer ul li{
+    position: relative;
+    left: 39%;
+}
+
+footer{
+    width: 100%;
+    background: white;
+    border-radius: 30px;
+    font-family: "Paytone One";
+    font-size: 27px;
+}
+
+footer ul li a img{
+    width: 35px;
+    height: 35px;
+}
