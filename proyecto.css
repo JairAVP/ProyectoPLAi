@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:wght@100&display=swap');
 
 body{
     background: url(./background.png);
@@ -58,13 +59,16 @@ header ul li a:hover{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 400px;
+    height: 550px;
+    margin-bottom: 700px;
 }
 
 .productos{
     background: white;
     opacity: 0.8;
     width: 250px;
-    height: 325px;
+    height: 345px;
     margin: 15px;
     border-radius: 20px;
     font-family: "Paytone One";
@@ -81,31 +85,147 @@ header ul li a:hover{
 }
 
 .cart{
-    padding: 12px;
+    padding-bottom: 15px;
     border-radius: 10px;
+    font-family: "Paytone One";
     background: rgba(98, 200, 186, 1);
-    text-decoration: none;
     color: white;
 }
 
-#Historia{
+button:hover{
+    cursor: pointer;
+}
+
+#modeloCarrito{
+    width: 50%;
+    height: 300px;
+    margin-top: 200px;
+    background: rgba(98, 200, 186, 1);
+    color: white;
     font-family: "Paytone One";
-    font-size: 30px;
     text-align: center;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.comprar{
+    background: rgba(33, 96, 147, 1);
+    padding: 20px;
+    font-family: "Paytone One";
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.comprar:hover{
+    background: red;
+}
+
+#Historia{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Paytone One";
+}
+
+#Historia .historia{
+    width: 50%;
+    display: inline-block;
+    left: 300px;
+}
+
+#Historia .azul{
+    width: 100%;
+    height: 700px;
+    background: rgba(33, 96, 147, 1);
+    border-radius: 20px;
+}
+
+#Historia p{
+    text-align: center;
+    font-family: "Hedvig Letters Serif";
+    font-size: 24px;
+    color: white;
+}
+
+#Historia .mision{
+    width: 400px;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    
+}
+
+#Historia .vision{
+    width: 400px;
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    
+}
+
+#Historia .azul .imagen{
+    display: inline-block;
+    position: absolute;
+    top: 408px;
+    left: 620px;
+}
+
+#Historia .verde{
+    width: 100%;
+    height: 300px;
+    background: rgba(98, 200, 186, 1);
+    border-radius: 20px;
 }
 
 #Contacto{
     font-family: "Paytone One";
     font-size: 30px;
     text-align: center;
-}
-
-#Contacto a{
+    margin-top: 400px;
     color: white;
 }
 
-h2{
+.infoContacto{
+    display: flex;
+    justify-content: center;
+    font-family: "Hedvig Letters Serif";
+}
+
+.Horarios{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+}
+
+.Celular{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+}
+
+.Direccion{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+}
+
+#Contacto .infoContacto ul li{
+    display: inline-block;
+    width: 300px;
+}
+
+#Contacto h2{
+    font-family: "Paytone One";
     font-size: 70px;
+    text-align: center;
+}
+
+#Contacto .infoContacto ul li a{
+    color: white;
 }
 
 footer ul li a{
@@ -129,4 +249,27 @@ footer{
 footer ul li a img{
     width: 35px;
     height: 35px;
+}
+
+
+/*JS*/
+
+.eliminar{
+    background: rgba(33, 96, 147, 1);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.eliminar:hover{
+    color: white;
+}
+
+.carrito-producto-cantidad{
+    text-align: center;
+    width: 50px;
+}
+
+.carrito-items{
+    display: flex;
+    flex-direction: row;
 }
